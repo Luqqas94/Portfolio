@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Portfolio/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="/Portfolio/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="portfolio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bienvenido a mi Espacio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Perfil">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Otros">Otros Datos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#Contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <section id="Inicio" class="container-fluid" >
+            <div class="claseInicio">
+                <h1>Lucas Obando</h1>
+                <h2>Trainee developer</h2>
+            </div>
+    
+        </section>
+        <section id="Perfil" class="container-fluid p-4" >
+            <div class="col-md-6">
+                <div class="imagen img-fluid">
+                    <img class="imagenPerfil" src="Imagenes portfolio/Fotocarnet.jpg" alt="FotoPerfil">
+                </div>
+            </div>
+            <div class="col-md-6 p-sm-4">
+                <div class="text-center">
+                    <h2 class="textoh2">Lucas Obando</h2>
+                    <ul class="horizontal-list">
+                        <li id="icon1">
+                            <div class="list-item">
+                                <img src="/Portfolio/Imagenes portfolio/HTML.svg" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                        </li>
+                        <li id="icon2">
+                            <div class="list-item">
+                                <img src="/Portfolio/Imagenes portfolio/CSS.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                        </li>
+                        <li id="icon3">
+                            <div class="list-item">
+                                <img src="/Portfolio/Imagenes portfolio/JS.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                        </li>
+                        <li id="icon4">
+                            <div class="list-item">
+                                <img src="/Portfolio/Imagenes portfolio/Python.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                        </li>
+                        <li id="icon5">
+                            <div class="list-item">
+                                <img src="/Portfolio/Imagenes portfolio/sql.svg" alt="SQL">
+                                <span>SQL</span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section id="Proyectos" class="container-fluid">
+
+        </section>
+        <section id="Otros" class="container-fluid" >
+            <div class="col-md-6 p-sm-4">
+                <div class="texto">
+                    <h2>Rollers</h2>
+                    <p>Soy instructor de rollers, hago slalom que es una disciplina, y enseño funcional</p>
+                    <h2>Juegos</h2>
+                    <p>Soy team lol y también a los jueguitos de Star Wars</p>
+                    <h2>Libros</h2>
+                    <p>Leo mucho, me gustan los libros en papel, soy bastante vintage en ese sentido, pero me gustan los libros de fantasía como el Señor de los Anillos,
+                        la Rueda del Tiempo, GOT, o de Star Wars, soy mega fan de Star Wars</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-sm-4">
+                <div class="imagen">
+                    <img class="imagenRollers" src="/Portfolio/Imagenes portfolio/fotorollers.jpg" alt="Fotorollers">
+                </div>
+            </div>
+        </section>
+        <section id="Contacto" class="container-fluid" >
+            <div class="col-md-6">
+                <div class="Contenedor-Contacto">
+                    <form class="formulario" action="procesar_formulario.php" method="post">
+                        <div class="form-inputs">
+                            <input type="text" class="form_input" name="Nombre" placeholder="Nombre" required>
+                            <input type="email" class="form_input" name="email" placeholder="Escriba su mail" required>
+                            <textarea class="form_input" name="mensaje" placeholder="Escriba su mensaje para Luke" required></textarea>
+                            <input type="submit" id="myButton" class="form_input_send" value="Enviar">
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-img">
+                    <img src="/Portfolio/Imagenes portfolio/WppCode.png" alt="correo">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="redes-sociales">
+            <a href="https://www.linkedin.com/in/lucas-obando-66265556" target="_blank" rel="noopener">
+                <img src="/Portfolio/Imagenes portfolio/linkedin.svg" alt="LinkedIn" class="bar-icons">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/Lukke94" target="_blank" rel="noopener">
+                <img src="Imagenes portfolio/Instagram.svg" alt="Instagram" class="bar-icons">
+                <span>Instagram</span>
+            </a>
+            <a href="https://github.com/Luqqas94" target="_blank" rel="noopener">
+                <img src="/Portfolio/Imagenes portfolio/github.svg" alt="Github" class="bar-icons">
+                <span>Github</span>
+            </a>
+            </div>
+        </footer>
+</body>
+</html>
